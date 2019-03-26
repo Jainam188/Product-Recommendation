@@ -27,8 +27,9 @@ In Product Recommendation it will recommend 10 product to every user.
 
     Dependancies
 Import Pandas
+
 Import Graphlab
 
 For more understanding of recommendation refer below link
 
-        https://www.analyticsvidhya.com/blog/2016/06/quick-guide-build-recommendation-engine-python/
+https://www.analyticsvidhya.com/blog/2016/06/quick-guide-build-recommendation-engine-python/
