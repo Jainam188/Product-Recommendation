@@ -27,7 +27,6 @@ In Product Recommendation it will recommend 10 product to every user.
 
     Dependancies
     #Import Pandas
-
     #Import Graphlab
 
 For more understanding of recommendation refer below link
