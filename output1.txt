@@ -1,0 +1,155 @@
+"C:\Users\Jainam\PycharmProjects\product recommendation\venv1\Scripts\python.exe" "C:/Users/Jainam/PycharmProjects/product recommendation/product recommendation.py"
+   customerId
+0        1553
+1       20400
+2       19750
+3        6334
+4       27773
+   customerId                        products
+0           0                              20
+1           1  2|2|23|68|68|111|29|86|107|152
+2           2       111|107|29|11|11|11|33|23
+3           3                         164|227
+4           5                             2|2
+         customerId
+count   1000.000000
+mean   11253.793000
+std     7777.723661
+min        4.000000
+25%     4658.500000
+50%     9997.000000
+75%    16755.500000
+max    28577.000000
+        customerId
+count  3000.000000
+mean   1601.253333
+std    1117.880638
+min       0.000000
+25%     675.750000
+50%    1448.000000
+75%    2391.250000
+max    4379.000000
+('Execution time:', 0.03, 'minutes')
+(7752, 3)
+   customerId  productId  purchase_count
+0           0         20               1
+1           1          2               2
+2           1         23               1
+3           1         29               1
+4           1         68               2
+     customerId productId  scaled_purchase_freq
+89          100         0                   1.0
+186         204         0                   0.5
+430         504         0                   1.0
+877        1070         0                   0.5
+929        1130         0                   1.0
+This non-commercial license of GraphLab Create for academic use is assigned to 160123116009@git.org.in and will expire on March 19, 2020.
+[INFO] graphlab.cython.cy_server: GraphLab Create v2.1 started. Logging: C:\Users\Jainam\AppData\Local\Temp\graphlab_server_1553078123.log.0
+Product Recommender Using Popularity Model
+Recsys training: model = popularity
+Preparing data set.
+    Data has 5948 observations with 2372 users and 234 items.
+    Data prepared in: 0.020001s
+5948 observations to process; with 234 unique items.
+recommendations finished on 1000/1000 queries. users per second: 142837
++------------+-----------+----------------+------+
+| customerId | productId |     score      | rank |
++------------+-----------+----------------+------+
+|    1553    |    169    |      1.0       |  1   |
+|    1553    |    252    |      0.8       |  2   |
+|    1553    |    245    | 0.785714285714 |  3   |
+|    1553    |    246    | 0.722222222222 |  4   |
+|    1553    |    262    | 0.666666666667 |  5   |
+|    1553    |    193    |     0.625      |  6   |
+|    1553    |    177    | 0.611111111111 |  7   |
+|    1553    |    253    | 0.571428571429 |  8   |
+|    1553    |    230    | 0.571428571429 |  9   |
+|    1553    |     87    |     0.5625     |  10  |
+|   20400    |    169    |      1.0       |  1   |
+|   20400    |    252    |      0.8       |  2   |
+|   20400    |    245    | 0.785714285714 |  3   |
+|   20400    |    246    | 0.722222222222 |  4   |
+|   20400    |    262    | 0.666666666667 |  5   |
+|   20400    |    193    |     0.625      |  6   |
+|   20400    |    177    | 0.611111111111 |  7   |
+|   20400    |    253    | 0.571428571429 |  8   |
+|   20400    |    230    | 0.571428571429 |  9   |
+|   20400    |     87    |     0.5625     |  10  |
+|   19750    |    169    |      1.0       |  1   |
+|   19750    |    252    |      0.8       |  2   |
+|   19750    |    245    | 0.785714285714 |  3   |
+|   19750    |    246    | 0.722222222222 |  4   |
+|   19750    |    262    | 0.666666666667 |  5   |
+|   19750    |    193    |     0.625      |  6   |
+|   19750    |    177    | 0.611111111111 |  7   |
+|   19750    |    253    | 0.571428571429 |  8   |
+|   19750    |    230    | 0.571428571429 |  9   |
+|   19750    |     87    |     0.5625     |  10  |
++------------+-----------+----------------+------+
+[10000 rows x 4 columns]
+
+PopularityRecommender
+Product Recommender Using Collaborative Model
+Recsys training: model = item_similarity
+Preparing data set.
+    Data has 6201 observations with 2408 users and 276 items.
+    Data prepared in: 0.029002s
+Training model from provided data.
+Gathering per-item and per-user statistics.
++--------------------------------+------------+
+| Elapsed Time (Item Statistics) | % Complete |
++--------------------------------+------------+
+| 1ms                            | 41.5       |
+| 1ms                            | 100        |
++--------------------------------+------------+
+Setting up lookup tables.
+Processing data in one pass using dense lookup tables.
++-------------------------------------+------------------+-----------------+
+| Elapsed Time (Constructing Lookups) | Total % Complete | Items Processed |
++-------------------------------------+------------------+-----------------+
+| 2ms                                 | 0                | 0               |
+| 8ms                                 | 100              | 276             |
++-------------------------------------+------------------+-----------------+
+Finalizing lookup tables.
+Generating candidate set for working with new users.
+Finished training in 1.01106s
+recommendations finished on 1000/1000 queries. users per second: 27025.6
++------------+-----------+-----------------+------+
+| customerId | productId |      score      | rank |
++------------+-----------+-----------------+------+
+|    1553    |    162    |  0.078947365284 |  1   |
+|    1553    |    228    | 0.0476190447807 |  2   |
+|    1553    |    102    | 0.0392156839371 |  3   |
+|    1553    |    174    | 0.0357142686844 |  4   |
+|    1553    |    186    | 0.0344827771187 |  5   |
+|    1553    |     37    | 0.0322580933571 |  6   |
+|    1553    |    124    | 0.0322580933571 |  7   |
+|    1553    |    219    | 0.0303030014038 |  8   |
+|    1553    |    194    | 0.0285714268684 |  9   |
+|    1553    |    289    | 0.0263158082962 |  10  |
+|   20400    |     29    | 0.0275586378574 |  1   |
+|   20400    |     23    | 0.0267415511608 |  2   |
+|   20400    |     8     | 0.0252109837532 |  3   |
+|   20400    |    107    | 0.0250105690956 |  4   |
+|   20400    |     11    |  0.02365473032  |  5   |
+|   20400    |     70    | 0.0228018403053 |  6   |
+|   20400    |     85    | 0.0218645203114 |  7   |
+|   20400    |    185    | 0.0216420328617 |  8   |
+|   20400    |    138    |  0.021398113966 |  9   |
+|   20400    |     20    | 0.0208472526073 |  10  |
+|   19750    |     29    | 0.0275586378574 |  1   |
+|   19750    |     23    | 0.0267415511608 |  2   |
+|   19750    |     8     | 0.0252109837532 |  3   |
+|   19750    |    107    | 0.0250105690956 |  4   |
+|   19750    |     11    |  0.02365473032  |  5   |
+|   19750    |     70    | 0.0228018403053 |  6   |
+|   19750    |     85    | 0.0218645203114 |  7   |
+|   19750    |    185    | 0.0216420328617 |  8   |
+|   19750    |    138    |  0.021398113966 |  9   |
+|   19750    |     20    | 0.0208472526073 |  10  |
++------------+-----------+-----------------+------+
+[10000 rows x 4 columns]
+
+ItemSimilarityRecommender
+
+Process finished with exit code 0
